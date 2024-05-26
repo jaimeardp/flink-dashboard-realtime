@@ -1,0 +1,13 @@
+{
+  "type": "record",
+  "name": "Transaction",
+  "namespace": "com.dataflow.main.model",
+  "fields": [
+    {"name": "from_address", "type": "string"},
+    {"name": "to_address", "type": "string"},
+    {"name": "value", "type": "double"},
+    {"name": "block_timestamp", "type": "long"},
+    {"name": "transaction_type", "type": ["null", "string"], "default": null},
+    {"name": "asset", "type": "string"}
+  ]
+}
