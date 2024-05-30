@@ -13,7 +13,7 @@ from utils import manager_random
 
 
 # Function to create a read session
-def create_read_session(bq_storage_client, project_id, table, datetime_str='2024-05-19 03:21:00'): # Pendient to use page_size and offset
+def create_read_session(bq_storage_client, project_id, table, datetime_str='2024-05-19 03:21:00'): # Pending to use page_size and offset
     read_session = types.ReadSession(
         table=table,
         data_format=types.DataFormat.AVRO,
